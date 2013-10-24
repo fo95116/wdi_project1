@@ -5,12 +5,17 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
 
-gem 'twilio-ruby'
-gem 'typhoeus'
-gem 'iron_worker_ng'
-gem 'whenever', :require => false
+    gem 'sqlite3'
+
+end
+
+    gem 'twilio-ruby'
+    gem 'typhoeus'
+    gem 'iron_worker_ng'
+    gem 'whenever', :require => false
+
 
 
 # Gems used only for assets and not required
@@ -27,12 +32,12 @@ end
 
 gem 'jquery-rails'
 
-group :development, :test do
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'pry'
-  gem 'pry-rails'
-end
+# group :development, :test do
+#   gem 'rspec-rails'
+#   gem 'shoulda-matchers'
+#   gem 'pry'
+#   gem 'pry-rails'
+# end
 
 gem 'bootstrap-sass-rails'
 
