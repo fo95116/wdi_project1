@@ -1,0 +1,56 @@
+
+
+      <div id="calendar">
+
+          <div id="monday">
+              <h4>Monday</h4>
+              <% @monday.each do |foo| %>
+                <%= render "show", calendar: foo %>
+              <% end %>
+
+          </div >
+
+          <div id="tuesday">
+              <h4>Tuesday</h4>
+              <% @tuesday.each do |foo| %>
+                <%= render "show", calendar: foo %>
+              <% end %>
+          </div >
+
+          <div id="wednesday">
+              <h4>Wednesday</h4>
+              <% @wednesday.each do |foo| %>
+                <%= render "show", calendar: foo %>
+             <% end %>
+          </div >
+
+          <div id="thursday">
+                <h4>Thursday</h4>
+              <% @thursday.each do |foo| %>
+               <%= render "show", calendar: foo %>
+              <% end %>
+          </div >
+
+          <div id="friday">
+              <h4>Friday</h4>
+              <% @friday.each do |foo| %>
+                <%= render "show", calendar: foo %>
+              <% end %>
+          </div >
+
+          <div id="saturday">
+              <h4>Saturday</h4>
+              <% @saturday.each do |foo| %>
+                <%= render "show", calendar: foo %>
+              <% end %>
+          </div >
+
+          <div id="sunday">
+              <h4>Sunday</h4>
+              <% @sunday.each do |foo| %>
+                <%= render "show", calendar: foo %>
+              <% end %>
+          </div >
+
+        </div><!-- end of calendar -->
+

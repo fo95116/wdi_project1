@@ -1,0 +1,18 @@
+<div id="container">
+      <h1>Health</h1>
+
+      <%= form_for @calendar do |f| %>
+          Juice name <br>
+          <%= f.text_field :name %> <br>
+          Benefit <br>
+          <%=f.text_field :benefit %> <br>
+          Ingredients <br>
+          <%= f.text_area :ingredients, size: "30x10" %> <br>
+          <%=f.select :day, options_for_select( [["monday"], ["tuesday"], ["wednesday"],                      ["thursday"], ["friday"], ["saturday"], ["sunday"]]) %>
+
+
+          <%= f.submit %>
+
+      <% end %>
+
+</div>
