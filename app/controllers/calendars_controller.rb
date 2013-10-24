@@ -1,4 +1,9 @@
 class CalendarsController < ApplicationController
+
+  # require 'twilio-ruby'
+  # require 'iron_worker_ng'
+  # require 'whenever'
+
     def index
 
         @calendar= Calendar.all
