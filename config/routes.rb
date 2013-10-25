@@ -5,4 +5,6 @@ CalendaRx::Application.routes.draw do
 
     resources :calendars
 
+ get 'reminders/make_message', to: 'reminders#make_message'
+
 end

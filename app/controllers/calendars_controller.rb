@@ -17,6 +17,9 @@ class CalendarsController < ApplicationController
         @sunday = Calendar.where(:day => "sunday")
     end
 
+
+
+
     def new
 
         @calendar= Calendar.new
@@ -26,6 +29,7 @@ class CalendarsController < ApplicationController
     def create
         new_calendar = Calendar.create(params[:calendar])
         redirect_to calendars_path(new_calendar.id)
+
     end
 
     def show
@@ -50,6 +54,24 @@ class CalendarsController < ApplicationController
           redirect_to calendars_path
 
     end
+
+    # def make_message
+    # number = Calendar.find(params[:number])
+
+    # #Get your Account Sid and Auth Token from twilio.com/user/account
+    # account_sid = 'AC8966f22ed875b133bc29031239a19d48'
+    # auth_token = '268b5410875cbf5edd5b1b4c17982c2d'
+    # @client = Twilio::REST::Client.new account_sid, auth_token
+    # #the @client initializes a helper library that will be able to receive and send messages
+    # #the @client will communicate with twilio's REST API (talks to the twilio server to send messages)
+
+    # message = @client.account.sms.messages.create(:body => "configure the twilio api. Adapt to the Calendar in an organized manner. Schedule?",
+
+    #     :to => "+1#{number}",
+    #     :from => "+14085123430")
+
+    # puts message.to
+    # end
 
 
 
