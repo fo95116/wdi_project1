@@ -32,6 +32,9 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+gem 'pg'
+end
 # group :development, :test do
 #   gem 'rspec-rails'
 #   gem 'shoulda-matchers'
@@ -39,7 +42,7 @@ gem 'jquery-rails'
 #   gem 'pry-rails'
 # end
 
-gem 'bootstrap-sass-rails'
+# gem 'bootstrap-sass-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
