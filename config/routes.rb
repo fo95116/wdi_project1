@@ -5,6 +5,11 @@ CalendaRx::Application.routes.draw do
 
     resources :calendars
 
- get 'reminders/make_message', to: 'reminders#make_message'
+    get 'reminders/new', to: 'reminders#new'
+
+    get '/make_message', to: 'reminders#make_message'
+    post '/create', to: 'reminders#make_message'
+
+    # get '/new', to: 'reminders#new'
 
 end
