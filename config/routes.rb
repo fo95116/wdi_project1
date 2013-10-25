@@ -9,6 +9,7 @@ CalendaRx::Application.routes.draw do
 
     get '/make_message', to: 'reminders#make_message'
     post '/create', to: 'reminders#make_message'
+    post '.../models/message.rb', to: 'message#make_message'
 
     # get '/new', to: 'reminders#new'
 

@@ -8,8 +8,212 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
-
+*= require twitter/bootstrap
  *= require_self
  *= require_tree .
  */
+#header {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #E73A95;
+    border-radius: 10px;
+}
+
+#header h1 {
+    font-family: "Helvetica Neue";
+    font-weight: lighter;
+    font-size: 250%;
+    letter-spacing: .0345em;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+#header em {
+  font-size: 175%;
+  font-family: Garamond, Baskerville;
+  color: #870047;
+  letter-spacing: .0835em;
+
+}
+
+#wrapper {
+width: 90%;
+float: left;
+background-color: white;
+margin: 0 auto;
+float: inherit;
+border: solid white;
+border-radius: 10px;
+}
+
+#calendar {
+
+      width: 95%;
+      margin: 0 auto;
+
+
+}
+
+#monday {
+    width: 14.1428571%;
+    text-align: center;
+    float: left;
+    border-right: solid #E76BAB;
+    background-color: white;
+    padding: .75%;
+}
+
+#tuesday {
+    width: 14.1428571%;
+    text-align: center;
+    float: left;
+    border-right: solid #E76BAB;
+    background-color: white;
+    padding: .75%;
+}
+
+#wednesday {
+    width: 14.1428571%;
+    text-align: center;
+    float: left;
+    border-right: solid #E76BAB;
+    background-color: white;
+    padding: .75%;
+}
+
+#thursday {
+    width: 14.1428571%;
+    text-align: center;
+    float: left;
+    border-right: solid #E76BAB;
+    background-color: white;
+    padding: .75%;
+}
+
+#friday {
+    width: 14.1428571%;
+    text-align: center;
+    float: left;
+    border-right: solid #E76BAB;
+    background-color: white;
+    padding: .75%;
+}
+
+#saturday {
+    width: 14.1428571%;
+    text-align: center;
+    float: left;
+    border-right: solid #E76BAB;
+    background-color: white;
+    padding: .75%;
+}
+
+#sunday {
+    width: 14.1428571%;
+    text-align: center;
+    float: left;
+    border-right: solid #E76BAB;
+    background-color: white;
+    padding: .75%;
+}
+
+
+div h4 {
+      font-family: "Helvetica Neue";
+
+       color: #E76BAB;
+       letter-spacing: .0845em;
+}
+
+h4 { font-family: "Helvetica Neue";}
+
+h1 { font-family: "Helvetica Neue";
+       font-weight: lighter;
+       color: #D0006E;
+       letter-spacing: .0845em;
+
+  }
+
+body{ background-color: #E76BAB;}
+
+#container {
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+#cell {
+   text-align: left;
+   font-family: "Helvetica Neue";
+
+}
+
+#footer {
+clear: both;
+width: 95%;
+margin: 10px auto;
+background-color: #E73A95;
+}
+
+#quote {
+  font-family: Futura;
+  width: 100%;
+  background-color: #E76BAB;
+  color: black;
+  border: solid #D0006E;
+  border-radius: 10px;
+  margin: 0 auto;
+  float: left;
+}
+
+a {
+  background-color: white;
+  border: solid white;
+  border-radius: 3px;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  font-size: 200%;
+  color: #E76BAB;
+}
+
+a:hover {
+  background-color: #E76BAB;
+  border: solid #E76BAB;
+  border-radius: 3px;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  font-size: 200%;
+  color: white;
+  text-decoration: none;
+}
+
+#footer a {
+  background-color: #E73A95;
+  border: solid #E73A95;
+  border-radius: 3px;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  font-size: 200%;
+  color: white;
+}
+
+#footer a:hover {
+  background-color: white;
+  border: solid white;
+  border-radius: 3px;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  font-size: 200%;
+  color: #E73A95;
+  text-decoration: none;
+}
+
+#form {
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5%;
+}
 

@@ -1,12 +1,22 @@
+<div id="wrapper">
+
+<!-- <div id="quote">
+      <h2>“Let food be thy medicine and medicine be thy food”<br>  Hippocrates</h2>
+
+</div> -->
+
+
+
+
 <div id="container">
       <h1>Health</h1>
 
       <%= form_for @calendar do |f| %>
-          Juice name <br>
-          <%= f.text_field :name %> <br>
-          Benefit <br>
-          <%=f.text_field :benefit %> <br>
-          Ingredients <br>
+          Juice name<br>
+          <%= f.text_field :name %><br>
+          Benefit<br>
+          <%=f.text_field :benefit %><br>
+          Ingredients<br>
           <%= f.text_area :ingredients, size: "30x10" %> <br>
 
 
@@ -18,3 +28,4 @@
       <% end %>
 
 </div>
+</div> <!-- end of wrapper -->
