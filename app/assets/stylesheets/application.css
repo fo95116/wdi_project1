@@ -51,8 +51,6 @@ border-radius: 10px;
 
       width: 95%;
       margin: 0 auto;
-
-
 }
 
 #monday {
@@ -151,6 +149,7 @@ body{ background-color: #E76BAB;}
 
 #footer {
 clear: both;
+margin-top: 5%;
 width: 95%;
 margin: 10px auto;
 background-color: #E73A95;
@@ -191,7 +190,6 @@ a:hover {
 #footer a {
   background-color: #E73A95;
   border: solid #E73A95;
-  border-radius: 3px;
   font-family: "Helvetica Neue";
   font-weight: lighter;
   font-size: 200%;
@@ -201,7 +199,6 @@ a:hover {
 #footer a:hover {
   background-color: white;
   border: solid white;
-  border-radius: 3px;
   font-family: "Helvetica Neue";
   font-weight: lighter;
   font-size: 200%;

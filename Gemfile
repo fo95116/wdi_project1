@@ -6,10 +6,10 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-
     gem 'sqlite3'
-
 end
+
+
 
     gem 'twilio-ruby'
     gem 'typhoeus'

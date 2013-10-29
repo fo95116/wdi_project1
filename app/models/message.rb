@@ -1,8 +1,8 @@
 class Message < ActiveRecord::Base
   attr_accessible :number
 
-
       def self.make_message
+                Message.make_message(params)
                 phone_number = params[:message][:number]
                 # Get twilio-ruby from twilio.com/docs/ruby/install
                 require 'twilio-ruby'
@@ -14,7 +14,7 @@ class Message < ActiveRecord::Base
                 #the @client initializes a helper library that will be able to receive and send messages
                 #the @client will communicate with twilio's REST API (talks to the twilio server to send messages)
 
-                message = @client.account.sms.messages.create(:body => "Ya llego el viejito",
+                message = @client.account.sms.messages.create(:body => "Second Message",
 
                     :to => "+1#{phone_number}",
                     :from => "+14085123430")

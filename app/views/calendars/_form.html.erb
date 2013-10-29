@@ -1,31 +1,22 @@
 <div id="wrapper">
 
-<!-- <div id="quote">
-      <h2>“Let food be thy medicine and medicine be thy food”<br>  Hippocrates</h2>
+    <div id="container">
+          <h1>Health</h1>
 
-</div> -->
-
-
-
-
-<div id="container">
-      <h1>Health</h1>
-
-      <%= form_for @calendar do |f| %>
-          Juice name<br>
-          <%= f.text_field :name %><br>
-          Benefit<br>
-          <%=f.text_field :benefit %><br>
-          Ingredients<br>
-          <%= f.text_area :ingredients, size: "30x10" %> <br>
+          <%= form_for @calendar do |f| %>
+              Juice name<br>
+              <%= f.text_field :name %><br>
+              Benefit<br>
+              <%=f.text_field :benefit %><br>
+              Ingredients<br>
+              <%= f.text_area :ingredients, size: "30x10" %> <br>
 
 
-          <%=f.select :day, options_for_select( [["monday"], ["tuesday"], ["wednesday"],                      ["thursday"], ["friday"], ["saturday"], ["sunday"]]) %>
+              <%=f.select :day, options_for_select( [["monday"], ["tuesday"], ["wednesday"],
+              ["thursday"], ["friday"], ["saturday"], ["sunday"]]) %>
 
+              <%= f.submit %>
+          <% end %>
 
-          <%= f.submit %>
-
-      <% end %>
-
-</div>
+    </div>
 </div> <!-- end of wrapper -->
